@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+<!-- Website Template designed by www.downloadwebsitetemplates.co.uk -->
+<meta charset="UTF-8">
+<title>PerfectForTech | Under Construction</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="apple-touch-icon" sizes="180x180" href="images/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
+<!-- <link rel="manifest" href="images/site.webmanifest"> -->
+<!--[if IE]><![endif]-->
+<link rel="stylesheet" href="css/style.css">
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body id="backtotop">
+
+<div class="fullwidth clearfix">
+	<div id="topcontainer" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
+		
+		<p><img height="80" src="images/logo.png"></p>
+		<h1><span>Progress</span><br />is coming soon</h1>
+		<p>It's almost ready ... honest</p>
+		
+	</div>
+</div>
+
+<div class="arrow-separator arrow-white"></div>
+
+<div class="fullwidth colour1 clearfix">
+	<div id="countdown" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
+
+		<div id="countdowncont" class="clearfix">
+			<ul id="countscript">
+				<li>
+					<span class="days">18</span>
+					<p>Days</p>
+				</li>
+				<li>
+					<span class="hours">15</span>
+					<p>Hours</p>
+				</li>
+				<li class="clearbox">
+					<span class="minutes">44</span>
+					<p>Minutes</p>
+				</li>
+				<li>
+					<span class="seconds">29</span>
+					<p>Seconds</p>
+				</li>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+<div class="arrow-separator"></div>
+
+<div class="fullwidth clearfix">
+	<div id="footercont" class="bodycontainer clearfix" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
+
+		<p class="backtotop"><a title="" href="#backtotop"><span class="fa fa-angle-double-up"></span></a></p>
+		<div id="socialmedia" class="clearfix">
+			<ul>
+				<li><a title="PerfectForTech Facebook page" href="https://www.facebook.com/perfectfortech" rel="external"><span class="fa fa-facebook"></span></a></li>
+				<li><a title="" href="mailto:perfectfortechinfo@gmail.com" rel="external"><span class="fa fa-google-plus"></span></a></li>
+			</ul>
+		</div>
+		<p>PerfectForTech 2018 | All Rights Reserved</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript" src="js/owlcarousel.js"></script>
+<script type="text/javascript" src="js/uikit.scrollspy.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script>
+
+// $(document).ready(function() {
+// 	"use strict";
+// 	jQuery("#countdown").countdown({
+// 		date: "12 june 2015 12:00:00", /** Enter new date here **/
+// 		format: "on"
+// 	},
+// 	function() {
+// 		// callback function
+// 	});
+// });
+
+var timerId =
+  countdown(
+    new Date(2020,4,25),
+    function(ts) {
+		$(".days").html(ts.days)
+		$(".hours").html(ts.hours)
+		$(".minutes").html(ts.minutes)
+		$(".seconds").html(ts.seconds)
+      
+    },
+    countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
+
+</script>
+   
+</body>
+</html>
